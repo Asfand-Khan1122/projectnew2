@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 50rem;
+    overflow-x: auto;
+    margin: rem;
+    border-radius: 0.5rem;
+}
+
+.container h1 {
+    padding: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #343a40;
+}
+
+.Tcontainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 45rem;
+    overflow: auto;
+}
+
+.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dataTable thead {
+    background: #0d98e9;
+    color: #fff;
+}
+
+.dataTable thead tr th {
+    font-size: 1.2rem;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    border: 0.063rem solid #ddd;
+}
+
+.dataTable tbody tr td {
+    font-size: 1.2rem;
+    text-align: center;
+    border: 0.063rem solid #ddd;
+    padding: 1rem;
+}
+
+.dataTable tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.dataTable tr:hover td {
+    background: #cce5ff;
+    color: #000;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.dataTable button {
+    display: inline-block;
+    border: none;
+    margin: 0 auto;
+    padding: 0.8rem;
+    border-radius: 0.188rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-vendor {
+    background: #28a745;
+    color: #fff;
+}
+
+.btn-edit {
+    background: #ffc107;
+    color: #343a40;
+}
+
+.btn-product {
+    background: #dc3545;
+    color: #fff;
+}
+
+@media screen and (max-width: 48rem) {
+    .dataTable thead th,
+    .dataTable tbody td {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+}
